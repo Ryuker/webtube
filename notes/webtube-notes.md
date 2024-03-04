@@ -2,7 +2,7 @@
 
 # 1. Setup Vite
 ``` JS Terminal
-$npm i vite@latest
+$npm create vite@latest
 ```
 
 
