@@ -13,7 +13,7 @@ export default function PageHeader() {
           <img src={logo} alt="Logo" className="h-6" />
         </a>
       </div>
-      <form className="flex gap-4 flex-grow justify-center">
+      <form className="md:flex hidden gap-4 flex-grow justify-center">
         <div className="flex flex-grow max-w-[600px]">
           <input 
             type="search" 
@@ -28,6 +28,12 @@ export default function PageHeader() {
         </Button>
       </form>
       <div className="flex flex-shrink-0 md:gap-2">
+        <Button size="icon" variant="ghost" className="md:hidden">
+          <Search />
+        </Button>
+        <Button size="icon" variant="ghost" className="md:hidden">
+          <Mic />
+        </Button>
         <Button size="icon" variant="ghost">
           <Upload />
         </Button>

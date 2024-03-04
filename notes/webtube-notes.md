@@ -75,6 +75,14 @@ import colors from "tailwindcss/colors";
   - added search input styling
   - added search button styling
 
+- made the form dissapear through tailwind classes on small screen sizes
+  - extra classes on form - `md:flex hidden`
+
+# 9. Responsive changes
+- added Search and Mic buttons to Righ Hand Section
+  - they are hidden on md or larger sizes
+
+
 
 
 
