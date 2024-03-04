@@ -69,7 +69,7 @@ import colors from "tailwindcss/colors";
 - added flex styling to main RighHand section div to align the buttons horizontally with some dynamic margins
 
 # 8. Search Bar
-
+21:46 in the video
 
 
 
