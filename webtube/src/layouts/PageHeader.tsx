@@ -1,4 +1,4 @@
-import { Menu, Upload, Bell, User } from 'lucide-react';
+import { Menu, Upload, Bell, User, Mic, Search } from 'lucide-react';
 import Button from '../components/Button';
 import logo from '../assets/Logo.png';
 
@@ -13,7 +13,20 @@ export default function PageHeader() {
           <img src={logo} alt="Logo" className="h-6" />
         </a>
       </div>
-      <div></div>
+      <form className="flex gap-4 flex-grow justify-center">
+        <div className="flex flex-grow max-w-[600px]">
+          <input 
+            type="search" 
+            placeholder="search" 
+            className="rounded-l-full border border-secondary-border shadow-inner shadow-secondary py-1 px-4 text-lg w-full focus:border-blue-500 outline-none"/>
+          <Button>
+            <Search />
+          </Button>
+        </div>
+        <Button type="button" size="icon" className="flex-shrink-0">
+          <Mic />
+        </Button>
+      </form>
       <div className="flex flex-shrink-0 md:gap-2">
         <Button size="icon" variant="ghost">
           <Upload />
