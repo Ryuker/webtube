@@ -22,6 +22,13 @@ npx tailwindcss init -p
 # 2. Cleanup before start
 - cleaned out App.tsx
 
+# 3. Layouts folder
+1. Added `layouts` folder in `src`
+
+## Page Header
+2. Added `PageHeader.tsx` component in layouts folder and imported into `App`
+
+
 
 
 
