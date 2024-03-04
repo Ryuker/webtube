@@ -1,4 +1,4 @@
-import { Menu, Upload, Bell, User, Mic, Search } from 'lucide-react';
+import { Menu, Upload, Bell, User, Mic, Search, ArrowLeft } from 'lucide-react';
 import Button from '../components/Button';
 import logo from '../assets/Logo.png';
 import { useState } from 'react';
@@ -22,6 +22,12 @@ export default function PageHeader() {
 
       <form className={`gap-4 flex-grow justify-center
         ${showFullWidthSearch ? "flex" : "hidden md:flex"}`}>
+        {showFullWidthSearch && <Button 
+            onClick={() => setShowFullWidthSearch(false)}
+            type="button" size="icon" variant="ghost" className="flex-shrink-0">
+            <ArrowLeft />
+          </Button>
+        }
         <div className="flex flex-grow max-w-[600px]">
           <input 
             type="search" 

@@ -83,7 +83,11 @@ import colors from "tailwindcss/colors";
   - they are hidden on md or larger sizes
 
 # 10. Mobile Search Bar
-
+- added state and state toggle to search button to toggle the form with the search bar
+  - if this state is true we hide the other navbar elements
+- added back button to toggle the state back to false
+! - The above still has a UX oversight when you resize the window
+  - all the elements should show when we hit md or above screen size apart from the mobile only icons
 
 
 
