@@ -68,6 +68,7 @@ import colors from "tailwindcss/colors";
 - reused the Button component with the Icons nested into it
 - added flex styling to main RighHand section div to align the buttons horizontally with some dynamic margins
 
+# 8. Search Bar
 
 
 
