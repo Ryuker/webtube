@@ -94,7 +94,8 @@ import colors from "tailwindcss/colors";
   - added grid styling to the container div for the video cards and categories
 ## Categories
 - Added CategoryPills component with buttons
-- added new variant to make on of the buttons dark
+- added new variant to make one of the buttons dark
+
 
 
 
