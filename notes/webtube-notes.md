@@ -53,6 +53,11 @@ import colors from "tailwindcss/colors";
 ```
 - specified colors in `extend` key of theme
 
+## Button styles
+- specified a buttonStyles object with variants that we are using in the render function
+- added ButtonProps type to pass some props to the button
+- finished writing the button
+
 
 
 
