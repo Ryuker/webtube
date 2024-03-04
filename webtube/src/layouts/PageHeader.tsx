@@ -1,4 +1,5 @@
 import { Menu } from 'lucide-react';
+import Button from '../components/Button';
 import logo from '../assets/Logo.png';
 
 export default function PageHeader() {
