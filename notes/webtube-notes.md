@@ -54,11 +54,13 @@ import colors from "tailwindcss/colors";
 - specified colors in `extend` key of theme
 
 ## Button styles
-- specified a buttonStyles object with variants that we are using in the render function
+1. specified a buttonStyles object with variants that we are using in the render function
   - variants allow to control what kind of variations the button can have
     - this gives a lot of control of what is and isn't possible in terms of look with the button
-- added ButtonProps type to pass some props to the button
-- finished writing the button
+2.  added ButtonProps type to pass some props to the button
+3. added import of `twMerge` in Button to merge classNames we pass to the button , gives more control
+
+
 
 
 
