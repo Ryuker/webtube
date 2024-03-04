@@ -82,6 +82,9 @@ import colors from "tailwindcss/colors";
 - added Search and Mic buttons to Righ Hand Section
   - they are hidden on md or larger sizes
 
+# 10. Mobile Search Bar
+
+
 
 
 
