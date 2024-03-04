@@ -92,17 +92,24 @@ import colors from "tailwindcss/colors";
 # 11. Video Card Container Grid Layout
 ## Container grid for the cards
   - added grid styling to the container div for the video cards and categories
-## Categories
+# 12. Category Pills
 - Added CategoryPills component with buttons
 - added new variant to make one of the buttons dark
 - added data folder with `home.ts` to export an array of categories
 - called map to display a button for each category
 
-### Setting category conditional variant for selected category display
+## Setting category conditional variant for selected category display
 - added a state to store the current selected category
 - passed down the setState function to the CategoryPills component and the category
 - added ternary to set the correct variant based on the category
 - added onClick call to the buttons to change the selected category, this is done using a callBack to `setSelectedCategory` with the category passed in
+
+## Scrolling
+- removed horizontal scrolling using tailwind classes
+`overflow-x-hidden px-8 pb-4`
+
+## Chevron Arrows to navigate through category pills
+41:45 in video
 
 
 
