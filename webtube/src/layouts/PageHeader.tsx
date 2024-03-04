@@ -19,7 +19,7 @@ export default function PageHeader() {
             type="search" 
             placeholder="search" 
             className="rounded-l-full border border-secondary-border shadow-inner shadow-secondary py-1 px-4 text-lg w-full focus:border-blue-500 outline-none"/>
-          <Button>
+          <Button className="py-2 px-4 rounded-r-full border-secondary-border border border-l-0 flex-shrink-0">
             <Search />
           </Button>
         </div>

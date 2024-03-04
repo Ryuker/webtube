@@ -73,6 +73,7 @@ import colors from "tailwindcss/colors";
 - Added Form with input
   - Added search button 
   - added search input styling
+  - added search button styling
 
 
 
