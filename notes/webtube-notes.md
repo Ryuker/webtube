@@ -60,6 +60,15 @@ import colors from "tailwindcss/colors";
 2.  added ButtonProps type to pass some props to the button
 3. added import of `twMerge` in Button to merge classNames we pass to the button , gives more control
 
+# 6. Spacing
+1. added some padding and margins to main div of `PageHeader`
+
+# 7. Righhand Section of PageHeader
+- imported Icons from Lucide
+- reused the Button component with the Icons nested into it
+- added flex styling to main RighHand section div to align the buttons horizontally with some dynamic margins
+
+
 
 
 
