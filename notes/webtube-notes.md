@@ -95,6 +95,14 @@ import colors from "tailwindcss/colors";
 ## Categories
 - Added CategoryPills component with buttons
 - added new variant to make one of the buttons dark
+- added data folder with `home.ts` to export an array of categories
+- called map to display a button for each category
+
+### Setting category conditional variant for selected category display
+- added a state to store the current selected category
+- passed down the setState function to the CategoryPills component and the category
+- added ternary to set the correct variant based on the category
+- added onClick call to the buttons to change the selected category, this is done using a callBack to `setSelectedCategory` with the category passed in
 
 
 
