@@ -44,6 +44,15 @@ npm i lucide-react
 ``` Webtube terminal
 npm i class-variance-authority tailwind-merge
 ```
+- this is used to specify button styles across the app
+
+## Specifying App Colors
+- import colors from tailwind
+```JS tailwind.config.js
+import colors from "tailwindcss/colors";
+```
+- specified colors in `extend` key of theme
+
 
 
 
