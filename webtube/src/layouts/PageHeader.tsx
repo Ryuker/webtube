@@ -6,9 +6,9 @@ export default function PageHeader() {
   return (
     <div className="flex gap-10 lg:gap-20 justify-between">
       <div className="flex gap-4 items-center flex-shrink-0">
-        <button>
+        <Button variant="ghost" size="icon">
           <Menu />
-        </button>
+        </Button>
         <a href="/">
           <img src={logo} alt="Logo" className="h-6" />
         </a>

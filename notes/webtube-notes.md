@@ -55,6 +55,8 @@ import colors from "tailwindcss/colors";
 
 ## Button styles
 - specified a buttonStyles object with variants that we are using in the render function
+  - variants allow to control what kind of variations the button can have
+    - this gives a lot of control of what is and isn't possible in terms of look with the button
 - added ButtonProps type to pass some props to the button
 - finished writing the button
 
