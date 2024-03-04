@@ -89,6 +89,12 @@ import colors from "tailwindcss/colors";
 ! - The above still has a UX oversight when you resize the window
   - all the elements should show when we hit md or above screen size apart from the mobile only icons
 
+# 11. Video Card Container Grid Layout
+## Container grid for the cards
+  - added grid styling to the container div for the video cards and categories
+## Categories
+
+
 
 
 
