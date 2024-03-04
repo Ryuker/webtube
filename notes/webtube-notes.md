@@ -37,6 +37,14 @@ npm i lucide-react
 ```
 - imported `Menu` icon from lucide-react into `Header` and displayed in the button
 
+# 5. Button
+- added components folder and added Button component
+
+## Installing Some Packages
+``` Webtube terminal
+npm i class-variance-authority tailwind-merge
+```
+
 
 
 
