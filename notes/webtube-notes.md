@@ -30,6 +30,14 @@ npx tailwindcss init -p
 
 ### Logo
 
+# 4. Icons - Lucide React
+- installed `lucide-react` icons
+```JS Webtube terminal
+npm i lucide-react
+```
+- imported `Menu` icon from lucide-react into `Header` and displayed in the button
+
+
 
 
 
