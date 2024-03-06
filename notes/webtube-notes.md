@@ -109,7 +109,9 @@ import colors from "tailwindcss/colors";
 `overflow-x-hidden px-8 pb-4`
 
 ## Chevron Arrows to navigate through category pills
-41:45 in video
+- Added DIV in `CategoryPills`
+- added `Button` with `ChevronLeft` in it, specified variant and size
+- specified div tailwind classes to position the Button and add a soft gradient to transparent
 
 
 

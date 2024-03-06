@@ -1,3 +1,4 @@
+import { ChevronLeft } from "lucide-react";
 import Button from "./Button";
 
 type CategoryPillProps = {
@@ -18,6 +19,12 @@ export default function CategoryPills({ categories, selectedCategory, onSelect }
             {category}
           </Button>
         ))}
+      </div>
+      <div className="absolute left-0 top-1/2 -translate-y-1/2 bg-gradient-to-r from-white from-50% to-transparent w-24 h-full">
+        <Button variant="ghost" size="icon" 
+          className="h-full aspect-square w-auto p-1.5">
+          <ChevronLeft />
+        </Button>
       </div>
     </div>
   );
