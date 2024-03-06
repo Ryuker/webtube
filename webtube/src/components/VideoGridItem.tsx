@@ -25,7 +25,7 @@ export default function VideoGridItem({
           className="block w-full h-full object-cover rounded-xl" 
         />
 
-        <div className="absolute bottom-l right-1 bg-secondary-dark text-secondary text-sm px-5 rounded">
+        <div className="absolute bottom-1 right-1 bg-secondary-dark text-secondary text-sm px-5 rounded">
           {duration}
         </div>
         
