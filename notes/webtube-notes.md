@@ -182,7 +182,8 @@ import colors from "tailwindcss/colors";
 ``` HTML
 <meta name="referrer" content="no-referrer" />
 ```
-  
+
+video left at 1:05:18
 
 
 
