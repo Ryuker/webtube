@@ -161,6 +161,9 @@ import colors from "tailwindcss/colors";
     - video `img` and specified attributes and styling
     - video info with specified attributes and styling
   - added mock video data to `home.ts` in data folder
+- added map call in App to render a `VideoGridItem` for each video
+  - Passed down the video props using `...` operator
+  
 
 
 

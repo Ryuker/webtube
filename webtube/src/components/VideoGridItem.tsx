@@ -18,7 +18,6 @@ export default function VideoGridItem({
 }: VideoGridItemProps){
   return ( 
     <div className="flex flex-col gap-2">
-      VideoGridItem
       <a href={`/watch?v=${id}`}
         className="relative aspect-video"
       >
