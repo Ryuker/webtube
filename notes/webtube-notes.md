@@ -155,6 +155,7 @@ import colors from "tailwindcss/colors";
 ```
 
 ## VideoItem Component
+- Added `VideoGridItem` component
 
 
 
