@@ -23,7 +23,13 @@ export default function VideoGridItem({
         className="relative aspect-video"
       >
         <img src={thumbnailUrl} alt={title}
-          className="block w-full h-full object-cover rounded-xl" />
+          className="block w-full h-full object-cover rounded-xl" 
+        />
+
+        <div className="absolute bottom-l right-1 bg-secondary-dark text-secondary text-sm px-5 rounded">
+          {duration}
+        </div>
+        
       </a>
     </div>
   );
