@@ -143,6 +143,18 @@ import colors from "tailwindcss/colors";
 
 # 12. Video Container Section
 
+## Video Container Grid
+- In `App` added new div with the grid styling
+- `grid-cols-[repeat(auto-fill,minmax(300px,1fr))]` handles the repeat of the grid
+  - Makes sure the items are never less than 300px wide
+  - If there's room for more items on the row it adds them.
+  
+``` HTML 
+<div className="grid gap-4 
+  grid-cols-[repeat(auto-fill,minmax(300px,1fr))]"></div>
+```
+
+## VideoItem Component
 
 
 
