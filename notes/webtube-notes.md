@@ -113,6 +113,11 @@ import colors from "tailwindcss/colors";
 - added `Button` with `ChevronLeft` in it, specified variant and size
 - specified div tailwind classes to position the Button and add a soft gradient to transparent
 
+- repeated the above for the right hand button
+
+- added 2 states to display Chevron Buttons when they are visible
+  - made sure buttons are only displayed when this state is true
+
 
 
 
