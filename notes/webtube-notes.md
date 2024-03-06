@@ -141,6 +141,9 @@ import colors from "tailwindcss/colors";
 
 - The aboves makes sure the navigation through the Pills works properly through button input.
 
+# 12. Video Container Section
+
+
 
 
 
