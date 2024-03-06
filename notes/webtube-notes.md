@@ -118,6 +118,28 @@ import colors from "tailwindcss/colors";
 - added 2 states to display Chevron Buttons when they are visible
   - made sure buttons are only displayed when this state is true
 
+## Navigation through category pills bar
+- Added `TRANSLATE_AMOUNT` constant above component
+- Added `translate` state
+- Added onClick callbacks to `setTranslate`
+  - added functions to handle translate updates
+    - left calculates a new value by decrementing `translate` with `TRANSLATE_AMOUNT`
+      - left makes sure value doesn't go below 0
+
+    - right calculates a new value by decrementing `translate` with `TRANSLATE_AMOUNT`
+      - right gets the max scrollable width and the current visible width.
+        - these are aquired using a ref of the categoryPills container
+        - `edge:` = `containerRef.current.scrollWidth` 
+        - `width:` = `containerRef.current.clientWidth`
+
+      - right makes sure `newTranslate` + `width` doesn't go over edge
+        - if it does it returns: `edge` - `width`
+
+- added `useEffect()` with an resizeObserver
+  - this handles the button display
+  - this runs everytime categories or translate changes
+
+- The aboves makes sure the navigation through the Pills works properly through button input.
 
 
 
