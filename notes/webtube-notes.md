@@ -163,7 +163,15 @@ import colors from "tailwindcss/colors";
   - added mock video data to `home.ts` in data folder
 - added map call in App to render a `VideoGridItem` for each video
   - Passed down the video props using `...` operator
-  
+
+## FormatDuration utils function
+- Added `utils` folder with `formatDuration` function
+  - formats the time using an instance of `numberFormat` class from `Intl`
+  - calculates the hours, minutes and seconds
+  - returns a template string using the numberFormat instance
+
+- called the function in videoGridItem to display the duration 
+
 
 
 
