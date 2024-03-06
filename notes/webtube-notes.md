@@ -172,6 +172,17 @@ import colors from "tailwindcss/colors";
 
 - called the function in videoGridItem to display the duration 
 
+## Video info
+- Added a div with a bunch of a tags to display the profile icon, title, account and views
+  - views are formatted using an instance of `Intl.NumberFormat(undefined, { notation: "compact"})`
+    - this formats it when it with a M or K depending on the views.
+
+- Profile images are currently loaded from the profileUrl
+  - added this to index.html to make sure they are loaded correctly
+``` HTML
+<meta name="referrer" content="no-referrer" />
+```
+  
 
 
 
