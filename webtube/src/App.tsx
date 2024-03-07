@@ -3,7 +3,7 @@ import CategoryPills from "./components/CategoryPills";
 import { categories, videos } from "./data/home";
 import PageHeader from "./layouts/PageHeader";
 import VideoGridItem from "./components/VideoGridItem";
-import SideBar from "./components/Sidebar";
+import Sidebar from "./components/Sidebar";
 
 export default function App() {
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
