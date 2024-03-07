@@ -245,6 +245,9 @@ import colors from "tailwindcss/colors";
   - button is displayed when there's more in the section that is currently displayed
 
 - Populated sidebar with elements matching YouTube to explore the implementation
+- in the 'You' section mapped over playlist data to display the playlist buttons
+  - added `sidebar.ts` to the data folder with the mock data
+
   
  
 

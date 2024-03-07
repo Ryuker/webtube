@@ -1,7 +1,8 @@
-import { ChevronDown, ChevronUp, Clapperboard, Clock, History, Home, Library, List, PlaySquare, Repeat, ThumbsUp, User } from "lucide-react";
+import { ChevronDown, ChevronUp, Clapperboard, Clock, History, Home, Library, List, ListVideo, PlaySquare, Repeat, ThumbsUp, User } from "lucide-react";
 import { Children, ElementType, ReactNode, useState } from "react";
 import Button, { buttonStyles } from "../components/Button";
 import { twMerge } from "tailwind-merge";
+import { playlists } from "../data/sidebar";
 
 export default function Sidebar(){
   return(
@@ -25,7 +26,10 @@ export default function Sidebar(){
           <LargeSidebarItem Icon={PlaySquare} title="Your videos" url="/your-videos" />
           <LargeSidebarItem Icon={Clock} title="Watch later" url="/playlist?list=WL" />
           <LargeSidebarItem Icon={ThumbsUp} title="Liked videos" url="/liked" />
-          <LargeSidebarItem Icon={List} title="custom-list" url="/list" />
+          {playlists.map(playlist => (
+            <LargeSidebarItem key={playlist.id} Icon={ListVideo} title={playlist.name} url={`/playlist?list=${playlist.id}`} />
+          ))}
+          
         </LargeSidebarSection>
         <hr />
         <LargeSidebarSection title="Subscriptions" visibleItemCount={3}>
