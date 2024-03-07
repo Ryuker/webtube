@@ -186,6 +186,9 @@ import colors from "tailwindcss/colors";
   - formatTimeAgo() is a new utils function
     - it's explained more in depth here: [link to article](https://blog.webdevsimplified.com/2020-07/relative-time-format/)
 
+## Video player on mouse hover
+- 
+
 
 
 
