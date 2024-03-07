@@ -187,7 +187,20 @@ import colors from "tailwindcss/colors";
     - it's explained more in depth here: [link to article](https://blog.webdevsimplified.com/2020-07/relative-time-format/)
 
 ## Video player on mouse hover
-- 
+- added a `isVideoPlaying` state
+- added useEffect to:
+  - play the video from the start when the state is changed.
+  - pauses video when state is set to false
+- added `onMouseEnter` and `onMouseLeave` listeners to the grid item container 
+  - these toggle the state
+- added video item with appropriate styling and some other attributes
+``` JS
+<video 
+  ref={videoRef} muted playsInline src={videoUrl} 
+  className={`block h-full object-cover absolute inset-0 transition-opacity duration-200 
+  ${isVideoPlaying ? "opacity-100" : "opacity-0"}`}
+/>
+```
 
 
 
