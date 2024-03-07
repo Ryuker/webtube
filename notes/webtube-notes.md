@@ -218,6 +218,9 @@ import colors from "tailwindcss/colors";
   - this renders an `a` element with `icon`, `title` and `url`
 - populated Sidebar component with SmallSideBarItem items
 
+## Large Side Bar
+
+
 
 
 
