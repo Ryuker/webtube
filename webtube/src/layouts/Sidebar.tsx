@@ -1,6 +1,6 @@
-import { Clapperboard, Home, Library, Repeat } from "lucide-react";
-import { Children, ElementType, ReactNode } from "react";
-import { buttonStyles } from "../components/Button";
+import { ChevronDown, ChevronUp, Clapperboard, Home, Library, Repeat } from "lucide-react";
+import { Children, ElementType, ReactNode, useState } from "react";
+import Button, { buttonStyles } from "../components/Button";
 import { twMerge } from "tailwind-merge";
 
 export default function Sidebar(){
@@ -15,7 +15,7 @@ export default function Sidebar(){
       <aside className="w-56 lg:sticky absolute top-0 overflow-y-auto scrollbar-hidden pb-4 flex-col gap-2 px-2 flex">
         <LargeSidebarSection visibleItemCount={1} title="popular">
           <LargeSidebarItem isActive Icon={Home} title="Home" url="/" />
-          <LargeSidebarItem Icon={Home} title="Home" url="/" />
+          <LargeSidebarItem Icon={Repeat} title="Shorts" url="/" />
         </LargeSidebarSection>
 
       </aside>
@@ -48,13 +48,22 @@ type LargeSidebarSectionProps = {
 }
 
 function LargeSidebarSection({children, title, visibleItemCount = Number.POSITIVE_INFINITY} : LargeSidebarSectionProps) {
+  const [isExpanded, setIsExpanded] = useState(false);
   const childrenArray = Children.toArray(children).flat();
-  const visibleChildren = childrenArray.slice(0, visibleItemCount);
+  const showExpandButton =  childrenArray.length > visibleItemCount;
+  const visibleChildren = isExpanded ? childrenArray : childrenArray.slice(0, visibleItemCount);
+  const ButtonIcon = isExpanded ? ChevronUp : ChevronDown;
 
   return (
     <div>
       {title && <div className="ml-4 mt-2 text-lg mb-1">{title}</div> }
       {visibleChildren}
+      {showExpandButton && 
+        <Button variant="ghost" className="w-full flex items-center rounde-lg gap-4 p-3"
+          onClick={() => setIsExpanded(e =>!e)}>
+          <ButtonIcon className="w-6 h-6"/>
+          <div>{isExpanded ? "Show Less" : "Show More"}</div>
+        </Button>}
     </div>
   );
 }

@@ -239,6 +239,10 @@ import colors from "tailwindcss/colors";
   - this is nested in `LargeSideBarSection`
   - contains an `a` element with `icon`, `title`, `url` 
   - there's an optional `isActive` prop on the type which is used to change the button appearance.
+
+- added `isExpanded` state 
+- added Button to toggleShowMore and showLess of `LargeSideBar`
+  - button is displayed when there's more in the section that is currently displayed
   
  
 
