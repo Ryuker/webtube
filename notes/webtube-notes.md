@@ -219,6 +219,7 @@ import colors from "tailwindcss/colors";
 - populated Sidebar component with SmallSideBarItem items
 
 ## Large Side Bar
+test
 
 
 
