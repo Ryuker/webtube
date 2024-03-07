@@ -45,7 +45,8 @@ export default function VideoGridItem({
         className="relative aspect-video"
       >
         <img src={thumbnailUrl} alt={title}
-          className="block w-full h-full object-cover rounded-xl" 
+          className={`block w-full h-full object-cover transition-[border-radius] duration-200 
+          ${isVideoPlaying ? "rounded-none" : "rounded-xl" }`} 
         />
 
         <div className="absolute bottom-1 right-1 bg-secondary-dark text-secondary text-sm px-5 rounded">
@@ -53,7 +54,7 @@ export default function VideoGridItem({
         </div>
         <video ref={videoRef} muted playsInline src={videoUrl} 
           className={`block h-full object-cover absolute inset-0 transition-opacity duration-200 
-          ${isVideoPlaying ? "opacity-100" : "opacity-0"}`}/>
+          ${isVideoPlaying ? "opacity-100 delay-200" : "opacity-0"}`}/>
       </a>
       <div className="flex gap-2">
         <a href={`/@${channel.id}`} className="flex-shrink-0">

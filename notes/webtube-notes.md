@@ -198,7 +198,14 @@ import colors from "tailwindcss/colors";
 <video 
   ref={videoRef} muted playsInline src={videoUrl} 
   className={`block h-full object-cover absolute inset-0 transition-opacity duration-200 
-  ${isVideoPlaying ? "opacity-100" : "opacity-0"}`}
+  ${isVideoPlaying ? "opacity-100 delay-200" : "opacity-0"}`}
+/>
+```
+- Tweaked image to unround the borders when video is playing
+``` JS
+<img src={thumbnailUrl} alt={title}
+  className={`block w-full h-full object-cover transition-[border-radius] duration-200 
+  ${isVideoPlaying ? "rounded-none" : "rounded-xl" }`} 
 />
 ```
 
