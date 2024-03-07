@@ -209,6 +209,8 @@ import colors from "tailwindcss/colors";
 />
 ```
 
+# 13. Sidebar Component
+
 
 
 
