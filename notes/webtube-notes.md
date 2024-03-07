@@ -248,6 +248,10 @@ import colors from "tailwindcss/colors";
 - in the 'You' section mapped over playlist data to display the playlist buttons
   - added `sidebar.ts` to the data folder with the mock data
 
+## Supporting image in LargeSidebarItem
+- changed Icon to `IconOrImgUrl`, type can be either `ElementType` or `string`
+- added ternary to display an image when it's a string and else render the Icon
+- populated subscriptions using mock subscriptions data
   
  
 
