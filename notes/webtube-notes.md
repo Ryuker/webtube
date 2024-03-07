@@ -210,6 +210,13 @@ import colors from "tailwindcss/colors";
 ```
 
 # 13. Sidebar Component
+- Added `Sidebar` to layouts and imported into app
+  - specified some styling
+
+## Small Side Bar 
+- in Sidebar added `SmallSideBarItem` component
+  - this renders an `a` element with `icon`, `title` and `url`
+- populated Sidebar component with SmallSideBarItem items
 
 
 
