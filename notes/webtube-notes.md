@@ -182,8 +182,9 @@ import colors from "tailwindcss/colors";
 ``` HTML
 <meta name="referrer" content="no-referrer" />
 ```
-
-video left at 1:05:18
+- added `Views •` behind the views count and time ago using formatTimeAgo()
+  - formatTimeAgo() is a new utils function
+    - it's explained more in depth here: [link to article](https://blog.webdevsimplified.com/2020-07/relative-time-format/)
 
 
 

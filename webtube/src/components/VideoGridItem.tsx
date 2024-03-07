@@ -1,4 +1,5 @@
 import formatDuration from "../utils/formatDuration";
+import formatTimeAgo from "../utils/formatTimeAgo";
 
 type VideoGridItemProps = {
   id: string
@@ -46,7 +47,7 @@ export default function VideoGridItem({
             {channel.name}
           </a>
           <div className="text-secondary-text text-sm">
-            {VIEW_FORMATTER.format(views)}
+            {VIEW_FORMATTER.format(views)} Views • {formatTimeAgo(postedAt)}
           </div>
         </div>
       </div>
