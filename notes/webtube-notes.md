@@ -233,7 +233,7 @@ import colors from "tailwindcss/colors";
     const childrenArray = Children.toArray(children).flat();
     const visibleChildren = childrenArray.slice(0, visibleItemCount);
     ```
-  - we then render the visibleChildren
+  - we then render the visibleChildren and the title
 
 - added `LargeSidebarItems` component in this file with props type
   - this is nested in `LargeSideBarSection`

@@ -13,7 +13,7 @@ export default function Sidebar(){
         <SmallSidebarItem Icon={Library} title="Library" url="/library" />
       </aside>
       <aside className="w-56 lg:sticky absolute top-0 overflow-y-auto scrollbar-hidden pb-4 flex-col gap-2 px-2 flex">
-        <LargeSidebarSection visibleItemCount={1}>
+        <LargeSidebarSection visibleItemCount={1} title="popular">
           <LargeSidebarItem isActive Icon={Home} title="Home" url="/" />
           <LargeSidebarItem Icon={Home} title="Home" url="/" />
         </LargeSidebarSection>
@@ -53,6 +53,7 @@ function LargeSidebarSection({children, title, visibleItemCount = Number.POSITIV
 
   return (
     <div>
+      {title && <div className="ml-4 mt-2 text-lg mb-1">{title}</div> }
       {visibleChildren}
     </div>
   );
