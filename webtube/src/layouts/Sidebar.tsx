@@ -1,5 +1,5 @@
 import { Clapperboard, Home, Library, Repeat } from "lucide-react";
-import { ElementType } from "react";
+import { Children, ElementType, ReactNode } from "react";
 import { buttonStyles } from "../components/Button";
 import { twMerge } from "tailwind-merge";
 
@@ -13,7 +13,7 @@ export default function Sidebar(){
         <SmallSidebarItem Icon={Library} title="Library" url="/library" />
       </aside>
       <aside className="w-56 lg:sticky absolute top-0 overflow-y-auto scrollbar-hidden pb-4 flex-col gap-2 px-2 flex">
-        <LargeSidebarSection>
+        <LargeSidebarSection visibleItemCount={1}>
           <LargeSidebarItem isActive Icon={Home} title="Home" url="/" />
           <LargeSidebarItem Icon={Home} title="Home" url="/" />
         </LargeSidebarSection>
@@ -41,9 +41,20 @@ function SmallSidebarItem({Icon, title, url}: SmallSidebarItemProps){
   );
 }
 
-function LargeSidebarSection({children}) {
+type LargeSidebarSectionProps = {
+  children: ReactNode
+  title?: string
+  visibleItemCount?: number
+}
+
+function LargeSidebarSection({children, title, visibleItemCount = Number.POSITIVE_INFINITY} : LargeSidebarSectionProps) {
+  const childrenArray = Children.toArray(children).flat();
+  const visibleChildren = childrenArray.slice(0, visibleItemCount);
+
   return (
-    children
+    <div>
+      {visibleChildren}
+    </div>
   );
 }
 

@@ -222,10 +222,24 @@ import colors from "tailwindcss/colors";
 - added a new `aside` element for this with bunch of styling
 - added a `LargeSidebarSection` component in this file
   - this renders its children
+  - it's props are:
+    - children: of type `ReactNode`
+    - `title` and `visibleItemCount` as optional props
+  - visibleItemCount is set to `Number.POSITIVE_INFINITY` by default
+  - in the component we get a new array of the children matching the visibleItemCount
+    - `.flat` make sure we have a 1 dimensional array
+    - we then slice it to the correct length
+    ``` JS
+    const childrenArray = Children.toArray(children).flat();
+    const visibleChildren = childrenArray.slice(0, visibleItemCount);
+    ```
+  - we then render the visibleChildren
+
 - added `LargeSidebarItems` component in this file with props type
   - this is nested in `LargeSideBarSection`
   - contains an `a` element with `icon`, `title`, `url` 
   - there's an optional `isActive` prop on the type which is used to change the button appearance.
+  
  
 
 
