@@ -1,4 +1,4 @@
-import { ChevronDown, ChevronUp, Clapperboard, Home, Library, Repeat } from "lucide-react";
+import { ChevronDown, ChevronUp, Clapperboard, Clock, History, Home, Library, List, PlaySquare, Repeat, ThumbsUp, User } from "lucide-react";
 import { Children, ElementType, ReactNode, useState } from "react";
 import Button, { buttonStyles } from "../components/Button";
 import { twMerge } from "tailwind-merge";
@@ -20,14 +20,12 @@ export default function Sidebar(){
         </LargeSidebarSection>
         <hr />
         <LargeSidebarSection title="You" visibleItemCount={4}>
-          <LargeSidebarItem Icon={Home} title="Your channel" url="/channel" />
-          <LargeSidebarItem Icon={Home} title="History" url="/channel" />
-          <LargeSidebarItem Icon={Home} title="Your videos" url="/channel" />
-          <LargeSidebarItem Icon={Home} title="Watch later" url="/channel" />
-          <LargeSidebarItem Icon={Home} title="Your Channel" url="/channel" />
-          <LargeSidebarItem Icon={Home} title="Your Channel" url="/channel" />
-          <LargeSidebarItem Icon={Home} title="Your Channel" url="/channel" />
-          <LargeSidebarItem Icon={Home} title="Your Channel" url="/channel" />
+          <LargeSidebarItem Icon={User} title="Your channel" url="/library" />
+          <LargeSidebarItem Icon={History} title="History" url="/history" />
+          <LargeSidebarItem Icon={PlaySquare} title="Your videos" url="/your-videos" />
+          <LargeSidebarItem Icon={Clock} title="Watch later" url="/playlist?list=WL" />
+          <LargeSidebarItem Icon={ThumbsUp} title="Liked videos" url="/liked" />
+          <LargeSidebarItem Icon={List} title="custom-list" url="/list" />
         </LargeSidebarSection>
         <hr />
         <LargeSidebarSection title="Subscriptions" visibleItemCount={3}>
