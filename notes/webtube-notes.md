@@ -219,7 +219,14 @@ import colors from "tailwindcss/colors";
 - populated Sidebar component with SmallSideBarItem items
 
 ## Large Side Bar
-test
+- added a new `aside` element for this with bunch of styling
+- added a `LargeSidebarSection` component in this file
+  - this renders its children
+- added `LargeSidebarItems` component in this file with props type
+  - this is nested in `LargeSideBarSection`
+  - contains an `a` element with `icon`, `title`, `url` 
+  - there's an optional `isActive` prop on the type which is used to change the button appearance.
+ 
 
 
 
