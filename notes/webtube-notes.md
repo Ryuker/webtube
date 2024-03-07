@@ -243,6 +243,8 @@ import colors from "tailwindcss/colors";
 - added `isExpanded` state 
 - added Button to toggleShowMore and showLess of `LargeSideBar`
   - button is displayed when there's more in the section that is currently displayed
+
+- Populated sidebar with elements matching YouTube to explore the implementation
   
  
 

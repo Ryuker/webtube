@@ -13,9 +13,75 @@ export default function Sidebar(){
         <SmallSidebarItem Icon={Library} title="Library" url="/library" />
       </aside>
       <aside className="w-56 lg:sticky absolute top-0 overflow-y-auto scrollbar-hidden pb-4 flex-col gap-2 px-2 flex">
-        <LargeSidebarSection visibleItemCount={1} title="popular">
+        <LargeSidebarSection>
           <LargeSidebarItem isActive Icon={Home} title="Home" url="/" />
-          <LargeSidebarItem Icon={Repeat} title="Shorts" url="/" />
+          <LargeSidebarItem Icon={Repeat} title="Shorts" url="/shorts" />
+          <LargeSidebarItem Icon={Clapperboard} title="Subscriptions" url="/subscriptions" />
+        </LargeSidebarSection>
+        <hr />
+        <LargeSidebarSection title="You" visibleItemCount={4}>
+          <LargeSidebarItem Icon={Home} title="Your channel" url="/channel" />
+          <LargeSidebarItem Icon={Home} title="History" url="/channel" />
+          <LargeSidebarItem Icon={Home} title="Your videos" url="/channel" />
+          <LargeSidebarItem Icon={Home} title="Watch later" url="/channel" />
+          <LargeSidebarItem Icon={Home} title="Your Channel" url="/channel" />
+          <LargeSidebarItem Icon={Home} title="Your Channel" url="/channel" />
+          <LargeSidebarItem Icon={Home} title="Your Channel" url="/channel" />
+          <LargeSidebarItem Icon={Home} title="Your Channel" url="/channel" />
+        </LargeSidebarSection>
+        <hr />
+        <LargeSidebarSection title="Subscriptions" visibleItemCount={3}>
+          <LargeSidebarItem Icon={Home} title="Subscription #1" url="/channel" />
+          <LargeSidebarItem Icon={Home} title="Subscription #2" url="/channel" />
+          <LargeSidebarItem Icon={Home} title="Subscription #3" url="/channel" />
+          <LargeSidebarItem Icon={Home} title="Watch later" url="/channel" />
+          <LargeSidebarItem Icon={Home} title="Your Channel" url="/channel" />
+          <LargeSidebarItem Icon={Home} title="Your Channel" url="/channel" />
+          <LargeSidebarItem Icon={Home} title="Your Channel" url="/channel" />
+          <LargeSidebarItem Icon={Home} title="Your Channel" url="/channel" />
+        </LargeSidebarSection>
+        <hr />
+        <LargeSidebarSection title="Explore">
+          <LargeSidebarItem Icon={Home} title="Trending" url="/trending" />
+          <LargeSidebarItem Icon={Home} title="Music" url="/music" />
+          <LargeSidebarItem Icon={Home} title="Movies" url="/movies" />
+          <LargeSidebarItem Icon={Home} title="Gaming" url="/gaming" />
+          <LargeSidebarItem Icon={Home} title="News" url="/news" />
+          <LargeSidebarItem Icon={Home} title="Sports" url="/sports" />
+          <LargeSidebarItem Icon={Home} title="Podcasts" url="/podcasts" />
+        </LargeSidebarSection>
+        <hr />
+        <LargeSidebarSection title="More from WebTube">
+          <LargeSidebarItem Icon={Home} title="WebTube Premium" url="/premium" />
+          <LargeSidebarItem Icon={Home} title="WebTube Studio" url="/studio" />
+          <LargeSidebarItem Icon={Home} title="WebTube Music" url="/music" />
+          <LargeSidebarItem Icon={Home} title="WebTube Kids" url="/kids" />
+        </LargeSidebarSection>
+        <hr />
+        <LargeSidebarSection>
+          <LargeSidebarItem Icon={Home} title="Settings" url="/trending" />
+          <LargeSidebarItem Icon={Home} title="Report history" url="/history" />
+          <LargeSidebarItem Icon={Home} title="Help" url="/help" />
+          <LargeSidebarItem Icon={Home} title="Send feedback" url="/feedback" />
+        </LargeSidebarSection>
+        <LargeSidebarSection>
+          <div>
+            <a href="/about">About</a>
+            <a href="/press">Press</a>
+            <a href="/copyright">Copyright</a>
+            <a href="/contact">Contact us</a>
+            <a href="/creators">Creators</a>
+            <a href="/advertise">Advertise</a>
+            <a href="/developers">Developers</a>
+            <hr />
+            <a href="/terms">Terms</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/policy-and-safety">Policy & Safety</a>
+            <a href="/how-youtube-works">How YouTube works</a>
+            <a href="/test">Test new features</a>
+            <hr />
+            <span>© 2024 WebTube, built for learing purposes</span>
+          </div>
         </LargeSidebarSection>
 
       </aside>
