@@ -367,6 +367,11 @@ useEffect(() => {
 },[])
 ```
 
+# Project is now complete
+- Can still add:
+  - proper styling for the small links below in the bar
+  - appropriate icons for the sections in the sidebar that the tutorial doesn't cover
+
 
 
 
