@@ -314,8 +314,22 @@ import colors from "tailwindcss/colors";
 ## Opening and Closing the Side Bar in the Sidebar component
 - destructured `isLargeOpen` and `isSmallOpen` from `useSidebarContent`
 
-## Open behavior on large screen sizes
-- 
+## Open behavior on both screen sizes
+- in `Sidebar` component:
+  - added conditional styling to both bars
+    - Small Side Bar
+    ```JS 
+    ${
+      isLargeOpen ? "lg:hidden" : "lg:flex"
+    }
+    ```
+    
+    - Large Side Bar
+    ``` JS
+    ${isLargeOpen ? "lg:flex" : "lg:hidden"} 
+    ${isSmallOpen ? "flex z-[999] bg-white max-h-screen" : "hidden"}
+    ```
+
 
 
 

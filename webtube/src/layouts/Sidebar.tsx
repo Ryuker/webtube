@@ -9,13 +9,22 @@ export default function Sidebar(){
   const { isSmallOpen, isLargeOpen} = useSidebarContext();
   return(
     <>
-      <aside className="sticky top-0 overflow-y-auto scrollbar-hidden pb-4 flex flex-col ml-1 lg:hidden">
+      <aside 
+      className={`sticky top-0 overflow-y-auto scrollbar-hidden pb-4 flex flex-col ml-1 
+        ${
+          isLargeOpen ? "lg:hidden" : "lg:flex"
+        }`}
+      >
         <SmallSidebarItem IconOrImgUrl={Home} title="Home" url="/" />
         <SmallSidebarItem IconOrImgUrl={Repeat} title="Shorts" url="/shorts" />
         <SmallSidebarItem IconOrImgUrl={Clapperboard} title="Subscriptions" url="/subscriptions" />
         <SmallSidebarItem IconOrImgUrl={Library} title="Library" url="/library" />
       </aside>
-      <aside className="w-56 lg:sticky absolute top-0 overflow-y-auto scrollbar-hidden pb-4 flex-col gap-2 px-2 lg:flex hidden">
+      <aside 
+        className={`w-56 lg:sticky absolute top-0 overflow-y-auto scrollbar-hidden pb-4 flex-col gap-2 px-2 
+        ${isLargeOpen ? "lg:flex" : "lg:hidden"} 
+        ${isSmallOpen ? "flex z-[999] bg-white max-h-screen" : "hidden"}`}
+      >
         <LargeSidebarSection>
           <LargeSidebarItem isActive IconOrImgUrl={Home} title="Home" url="/" />
           <LargeSidebarItem IconOrImgUrl={Repeat} title="Shorts" url="/shorts" />
