@@ -350,6 +350,9 @@ className="lg:hidden pt-2 pb-4 px-2 sticky-top-0 bg-white"
 )}
 ```
 
+## Small useEffect to check the resize of the window to hide the LargeSidebar
+- 
+
 
 
 
