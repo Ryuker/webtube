@@ -284,7 +284,7 @@ import colors from "tailwindcss/colors";
 - specified to styling `lg:flex hidden`
   - this hides it on other sizes lg > higher sizes
 
-## Expand and Collapsing the Large Side Bar on button click
+# 14. Expand and Collapsing the Large Side Bar on button click
 - added `contexts` folder with a `SideBarContext.tsx` file
   - code is fairly simple:
     - we specify a context and an exported `SidebarProdider` function which takes in the children and renders them. 
@@ -306,6 +306,11 @@ import colors from "tailwindcss/colors";
 ## Wrapping All the app components in the SideBarProvider
 - in `App.tsx` we wrapped all the div into the `SidebarProvider`
   - this allows access in all of the components.
+
+## Toggling the Sidebar in the PageHeader
+- in `PageHeader` imported the `toggle` function from use `useSideBarContext()`
+- added onClick listener button with the hamburger icon to toggle the sidebar
+
 
 
 
