@@ -311,6 +311,10 @@ import colors from "tailwindcss/colors";
 - in `PageHeader` imported the `toggle` function from use `useSideBarContext()`
 - added onClick listener button with the hamburger icon to toggle the sidebar
 
+## Opening and Closing the Side Bar in the Sidebar component
+- destructured `isLargeOpen` and `isSmallOpen` from `useSidebarContent`
+
+## 
 
 
 

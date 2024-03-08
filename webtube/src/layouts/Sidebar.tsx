@@ -3,8 +3,10 @@ import { Children, ElementType, ReactNode, useState } from "react";
 import Button, { buttonStyles } from "../components/Button";
 import { twMerge } from "tailwind-merge";
 import { playlists, subscriptions } from "../data/sidebar";
+import { useSidebarContext } from "../contexts/SideBarContext";
 
 export default function Sidebar(){
+  const { isSmallOpen, isLargeOpen} = useSidebarContext();
   return(
     <>
       <aside className="sticky top-0 overflow-y-auto scrollbar-hidden pb-4 flex flex-col ml-1 lg:hidden">
