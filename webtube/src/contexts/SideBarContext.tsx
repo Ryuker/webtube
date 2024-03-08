@@ -31,6 +31,10 @@ export default function SidebarProvider({children}: SidebarProviderProps) {
     };
 
     window.addEventListener("resize", handler);
+
+    return () => {
+      window.removeEventListener("resize", handler);
+    }
   },[])
 
   function isScreenSmall() {
