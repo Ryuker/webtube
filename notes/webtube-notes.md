@@ -330,6 +330,9 @@ import colors from "tailwindcss/colors";
     ${isSmallOpen ? "flex z-[999] bg-white max-h-screen" : "hidden"}
     ```
 
+## PageHeaderFirstSection 
+- Moved this div into it's own component, but still in the same file
+ 
 
 
 
