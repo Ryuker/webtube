@@ -303,7 +303,10 @@ import colors from "tailwindcss/colors";
   }
   ```
 
-- 
+## Wrapping All the app components in the SideBarProvider
+- in `App.tsx` we wrapped all the div into the `SidebarProvider`
+  - this allows access in all of the components.
+
 
 
 
