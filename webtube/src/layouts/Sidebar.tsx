@@ -3,7 +3,7 @@ import { Children, ElementType, ReactNode, useState } from "react";
 import Button, { buttonStyles } from "../components/Button";
 import { twMerge } from "tailwind-merge";
 import { playlists, subscriptions } from "../data/sidebar";
-import { useSidebarContext } from "../contexts/SideBarContext";
+import { useSidebarContext } from "../contexts/SidebarContext";
 import { PageHeaderFirstSection } from "./PageHeader";
 
 export default function Sidebar(){

@@ -4,7 +4,7 @@ import { categories, videos } from "./data/home";
 import PageHeader from "./layouts/PageHeader";
 import VideoGridItem from "./components/VideoGridItem";
 import Sidebar from "./layouts/Sidebar";
-import SidebarProvider from "./contexts/SideBarContext";
+import SidebarProvider from "./contexts/SidebarContext";
 
 export default function App() {
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);

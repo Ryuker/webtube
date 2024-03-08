@@ -350,8 +350,18 @@ className="lg:hidden pt-2 pb-4 px-2 sticky-top-0 bg-white"
 )}
 ```
 
-## Small useEffect to check the resize of the window to hide the LargeSidebar
-- 
+## Auto closing LargeSideBar when shifting from small to large screen sizes
+- added a useEffect that run once with a event listener on the `resize` event  
+``` JS SideBarContext
+// Make sure the large bar is closed when window is of the large size
+useEffect(() => {
+  const handler = () => {
+    if (window.innerWidth >= 1024) setIsSmallOpen(false)
+  };
+
+  window.addEventListener("resize", handler);
+},[])
+```
 
 
 

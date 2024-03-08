@@ -2,7 +2,7 @@ import { Menu, Upload, Bell, User, Mic, Search, ArrowLeft } from 'lucide-react';
 import Button from '../components/Button';
 import logo from '../assets/Logo.png';
 import { useState } from 'react';
-import { useSidebarContext } from '../contexts/SideBarContext';
+import { useSidebarContext } from '../contexts/SidebarContext';
 
 export default function PageHeader() {
   const [showFullWidthSearch, setShowFullWidthSearch] = useState(false);
