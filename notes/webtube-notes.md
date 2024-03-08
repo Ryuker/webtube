@@ -252,6 +252,35 @@ import colors from "tailwindcss/colors";
 - changed Icon to `IconOrImgUrl`, type can be either `ElementType` or `string`
 - added ternary to display an image when it's a string and else render the Icon
 - populated subscriptions using mock subscriptions data
+
+## Large Side Bar scroll bar styling
+- this is done through custom css
+``` CSS index.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  @apply bg-transparent w-2;
+}  
+*::-webkit-scrollbar-thumb {
+  @apply bg-secondary-dark rounded-full;
+}
+
+.scrollbar-hidden::-webkit-scrollbar-thumb {
+  @apply bg-transparent;
+}
+
+.scrollbar-hover::-webkit-scrollbar-thumb {
+  @apply bg-secondary-border;
+}
+```
+
+
   
  
 
