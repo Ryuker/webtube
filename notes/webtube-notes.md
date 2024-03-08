@@ -314,7 +314,8 @@ import colors from "tailwindcss/colors";
 ## Opening and Closing the Side Bar in the Sidebar component
 - destructured `isLargeOpen` and `isSmallOpen` from `useSidebarContent`
 
-## 
+## Open behavior on large screen sizes
+- 
 
 
 
