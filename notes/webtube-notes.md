@@ -330,9 +330,15 @@ import colors from "tailwindcss/colors";
     ${isSmallOpen ? "flex z-[999] bg-white max-h-screen" : "hidden"}
     ```
 
-## PageHeaderFirstSection 
-- Moved this div into it's own component, but still in the same file
- 
+## PageHeaderFirstSection Component
+- Moved this div into it's own exported component `PageHeaderFirstSection`, 
+  - but still in the same file
+- this is used in both the PageHeader and Large Sidebar 
+- in LargeSidebar wrapped this in a div with styling for padding etc
+``` JS
+className="lg:hidden pt-2 pb-4 px-2"
+```
+
 
 
 
