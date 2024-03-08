@@ -1,4 +1,4 @@
-import { ChevronDown, ChevronUp, Clapperboard, Clock, History, Home, Library, List, ListVideo, PlaySquare, Repeat, ThumbsUp, User } from "lucide-react";
+import { ChevronDown, ChevronUp, Clapperboard, Clock, Film, Flame, Gamepad2, History, Home, Library, Lightbulb, List, ListVideo, Music, Newspaper, PlaySquare, Podcast, Repeat, ThumbsUp, Trophy, User } from "lucide-react";
 import { Children, ElementType, ReactNode, useState } from "react";
 import Button, { buttonStyles } from "../components/Button";
 import { twMerge } from "tailwind-merge";
@@ -42,13 +42,13 @@ export default function Sidebar(){
         </LargeSidebarSection>
         <hr />
         <LargeSidebarSection title="Explore">
-          <LargeSidebarItem IconOrImgUrl={Home} title="Trending" url="/trending" />
-          <LargeSidebarItem IconOrImgUrl={Home} title="Music" url="/music" />
-          <LargeSidebarItem IconOrImgUrl={Home} title="Movies" url="/movies" />
-          <LargeSidebarItem IconOrImgUrl={Home} title="Gaming" url="/gaming" />
-          <LargeSidebarItem IconOrImgUrl={Home} title="News" url="/news" />
-          <LargeSidebarItem IconOrImgUrl={Home} title="Sports" url="/sports" />
-          <LargeSidebarItem IconOrImgUrl={Home} title="Podcasts" url="/podcasts" />
+          <LargeSidebarItem IconOrImgUrl={Flame} title="Trending" url="/trending" />
+          <LargeSidebarItem IconOrImgUrl={Music} title="Music" url="/music" />
+          <LargeSidebarItem IconOrImgUrl={Film} title="Movies" url="/movies" />
+          <LargeSidebarItem IconOrImgUrl={Gamepad2} title="Gaming" url="/gaming" />
+          <LargeSidebarItem IconOrImgUrl={Newspaper} title="News" url="/news" />
+          <LargeSidebarItem IconOrImgUrl={Trophy} title="Sports" url="/sports" />
+          <LargeSidebarItem IconOrImgUrl={Podcast} title="Podcasts" url="/podcasts" />
         </LargeSidebarSection>
         <hr />
         <LargeSidebarSection title="More from WebTube">
