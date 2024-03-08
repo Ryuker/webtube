@@ -7,7 +7,7 @@ import { useSidebarContext } from "../contexts/SideBarContext";
 import { PageHeaderFirstSection } from "./PageHeader";
 
 export default function Sidebar(){
-  const { isSmallOpen, isLargeOpen} = useSidebarContext();
+  const { isSmallOpen, isLargeOpen, close} = useSidebarContext();
   return(
     <>
       <aside 
@@ -21,6 +21,11 @@ export default function Sidebar(){
         <SmallSidebarItem IconOrImgUrl={Clapperboard} title="Subscriptions" url="/subscriptions" />
         <SmallSidebarItem IconOrImgUrl={Library} title="Library" url="/library" />
       </aside>
+      {isSmallOpen && (
+        <div onClick={close} 
+          className="lg:hidden fixed inset-0 z-[999] bg-secondary-dark opacity-50" 
+        />
+      )}
       <aside 
         className={`w-56 lg:sticky absolute top-0 overflow-y-auto scrollbar-hidden pb-4 flex-col gap-2 px-2 
         ${isLargeOpen ? "lg:flex" : "lg:hidden"} 

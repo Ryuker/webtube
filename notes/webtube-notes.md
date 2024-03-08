@@ -339,6 +339,18 @@ import colors from "tailwindcss/colors";
 className="lg:hidden pt-2 pb-4 px-2 sticky-top-0 bg-white"
 ```
 
+## Page background when small side bar is open
+- between the sidebars added conditional to show a dark background on small sizes behind the bar
+  - closes the bar when we click on the background
+``` JS Sidebar.tsx
+{isSmallOpen && (
+  <div onClick={close} 
+    className="lg:hidden fixed inset-0 z-[999] bg-secondary-dark opacity-50" 
+  />
+)}
+```
+
+
 
 
 
