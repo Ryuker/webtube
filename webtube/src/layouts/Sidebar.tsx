@@ -26,7 +26,7 @@ export default function Sidebar(){
         ${isLargeOpen ? "lg:flex" : "lg:hidden"} 
         ${isSmallOpen ? "flex z-[999] bg-white max-h-screen" : "hidden"}`}
       >
-        <div className="lg:hidden pt-2 pb-4 px-2">
+        <div className="lg:hidden pt-2 pb-4 px-2 sticky-top-0 bg-white">
           <PageHeaderFirstSection />
         </div>
         <LargeSidebarSection>

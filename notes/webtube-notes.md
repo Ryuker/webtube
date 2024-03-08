@@ -334,9 +334,9 @@ import colors from "tailwindcss/colors";
 - Moved this div into it's own exported component `PageHeaderFirstSection`, 
   - but still in the same file
 - this is used in both the PageHeader and Large Sidebar 
-- in LargeSidebar wrapped this in a div with styling for padding etc
+- in LargeSidebar wrapped this in a div with styling for padding, stickyness etc
 ``` JS
-className="lg:hidden pt-2 pb-4 px-2"
+className="lg:hidden pt-2 pb-4 px-2 sticky-top-0 bg-white"
 ```
 
 
