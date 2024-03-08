@@ -285,7 +285,14 @@ import colors from "tailwindcss/colors";
   - this hides it on other sizes lg > higher sizes
 
 ## Expand and Collapsing the Large Side Bar on button click
-- 
+- added `contexts` folder with a `SideBarContext.tsx` file
+  - code is fairly simple:
+    - we specify a context and an exported `SidebarProdider` function which takes in the children and renders them. 
+      - we specify a type for the props
+      - we specify functions to toggle and close the sidebar, these take into account if it's on large or small screen sizes.
+      - we specify states to tracks if the bar is open on large or small sizes.
+    - we'll wrap the Sidebar component in this.
+
 
 
 
