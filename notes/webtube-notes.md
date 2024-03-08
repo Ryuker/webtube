@@ -284,6 +284,8 @@ import colors from "tailwindcss/colors";
 - specified to styling `lg:flex hidden`
   - this hides it on other sizes lg > higher sizes
 
+## Expand and Collapsing the Large Side Bar on button click
+
 
 
   
