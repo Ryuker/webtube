@@ -285,6 +285,7 @@ import colors from "tailwindcss/colors";
   - this hides it on other sizes lg > higher sizes
 
 ## Expand and Collapsing the Large Side Bar on button click
+- 
 
 
 
