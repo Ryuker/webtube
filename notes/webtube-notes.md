@@ -292,6 +292,18 @@ import colors from "tailwindcss/colors";
       - we specify functions to toggle and close the sidebar, these take into account if it's on large or small screen sizes.
       - we specify states to tracks if the bar is open on large or small sizes.
     - we'll wrap the Sidebar component in this.
+  
+  - Added an exported function that prevents use of the context outside of the SidebarProvider.
+  ``` JS 
+  export function useSideBarContext() {
+  const value = useContext(SidebarContext)
+  if (value == null) throw Error("Cannot use outside of SidebarProvider");
+
+  return value;
+  }
+  ```
+
+- 
 
 
 
