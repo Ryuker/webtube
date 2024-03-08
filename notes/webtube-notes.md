@@ -280,6 +280,11 @@ import colors from "tailwindcss/colors";
 }
 ```
 
+## Hiding the LargeSideBar
+- specified to styling `lg:flex hidden`
+  - this hides it on other sizes lg > higher sizes
+
+
 
   
  

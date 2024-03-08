@@ -13,7 +13,7 @@ export default function Sidebar(){
         <SmallSidebarItem IconOrImgUrl={Clapperboard} title="Subscriptions" url="/subscriptions" />
         <SmallSidebarItem IconOrImgUrl={Library} title="Library" url="/library" />
       </aside>
-      <aside className="w-56 lg:sticky absolute top-0 overflow-y-auto scrollbar-hidden pb-4 flex-col gap-2 px-2 flex">
+      <aside className="w-56 lg:sticky absolute top-0 overflow-y-auto scrollbar-hidden pb-4 flex-col gap-2 px-2 lg:flex hidden">
         <LargeSidebarSection>
           <LargeSidebarItem isActive IconOrImgUrl={Home} title="Home" url="/" />
           <LargeSidebarItem IconOrImgUrl={Repeat} title="Shorts" url="/shorts" />
