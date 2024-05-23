@@ -1,4 +1,4 @@
-import { ChevronDown, ChevronUp, Clapperboard, Clock, Film, Flame, Gamepad2, History, Home, Library, Lightbulb, List, ListVideo, Music, Newspaper, PlaySquare, Podcast, Repeat, ThumbsUp, Trophy, User } from "lucide-react";
+import { ChevronDown, ChevronUp, Clapperboard, Clock, Film, Flame, Gamepad2, History, Home, Library, ListVideo, Music, Newspaper, PlaySquare, Podcast, Repeat, ThumbsUp, Trophy, User } from "lucide-react";
 import { Children, ElementType, ReactNode, useState } from "react";
 import Button, { buttonStyles } from "../components/Button";
 import { twMerge } from "tailwind-merge";
@@ -86,7 +86,7 @@ export default function Sidebar(){
         </LargeSidebarSection>
         <LargeSidebarSection>
           <div>
-            <a href="/about">About</a>
+            {/* <a href="/about">About</a>
             <a href="/press">Press</a>
             <a href="/copyright">Copyright</a>
             <a href="/contact">Contact us</a>
@@ -98,9 +98,9 @@ export default function Sidebar(){
             <a href="/privacy">Privacy</a>
             <a href="/policy-and-safety">Policy & Safety</a>
             <a href="/how-youtube-works">How YouTube works</a>
-            <a href="/test">Test new features</a>
+            <a href="/test">Test new features</a> */}
             <hr />
-            <span>© 2024 WebTube, built for learing purposes</span>
+            <span>© 2024 WebTube, built for learning purposes</span>
           </div>
         </LargeSidebarSection>
 
